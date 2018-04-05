@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miApp">
+<head>
+
+    <title>Angular Basico</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ngDialog-theme-plain.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ngDialog.min.css">
+
+
+</head>
+
+<body ng-controller="bodyC" >
+    <div>
+        <button ng-click="agregar()">Agregar</button>
+        <div ng-repeat="a in tabla">{{a}}</div>
+            <p>Grilla</p>
+
+
+            <img src="imagenes/up.png" ng-click="arriba()" width=50>
+            <img src="imagenes/down.png" ng-click="abajo()" width=50>
+            <img src="imagenes/left.png" ng-click="izquierda()" width=50>
+            <img src="imagenes/right.png" ng-click="derecha()" width=50>
+            <span>{{mensaje}}</span> fila> <span>{{men}}</span><
+
+
+            <div ag-grid="gridOptions" class="ag-theme-fresh" style="height: 100px;"></div>
+        </div>
+
+
+        <hr>
+    </div>
+
+
+        <h1> Hola {{name}}</h1>
+        <input type="text" ng-model="name"></div>
+        <button ng-click="f1()">EJECUTAR AF1</button>
+
+        <div ng-show="name=='hola'" style="border: solid;"><h1>ERROR!!!!!!! </h1></div>
+
+        <div ng-bind="name"></div>
+
+        <div ng-controller="div1C" style="background-color:red;color:white;padding:20px;width: 33%;border: double;">
+            <b>Div1 {{name}}</b>
+            <button ng-click="papa()">EJECUTAR papa</button>
+            <button ng-click="f1()">EJECUTAR AF1</button>
+            <button ng-click="f2()">EJECUTAR AF2</button>
+        </div>
+
+        <div ng-controller="div2C" style="background-color:red;color:white;padding:20px;width: 33%;border: double;">
+            <b>Div2 {{name}}</b>
+            <button ng-click="papa()">EJECUTAR papa</button>
+            <button ng-click="f1()">EJECUTAR AF1</button>
+            <button ng-click="f2()">EJECUTAR AF2</button>
+        </div style="background-color:red;color:white;padding:20px;width: 33%;border: double;">
+
+
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/ag-grid.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/controladores.js"></script>
+
+    <script type="text/javascript" src="js/ngDialog.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>
