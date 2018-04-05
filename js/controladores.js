@@ -116,10 +116,6 @@ miApp.controller('bodyC',function($scope){
 
 
 
-
-
-
-
 miApp.controller('div1C',function($scope){
     $scope.name = 'nombre desde scope control div1c';
 
@@ -127,8 +123,6 @@ miApp.controller('div1C',function($scope){
         alert("Ejecutaste f1");
     }
 });
-
-
 
 
 
