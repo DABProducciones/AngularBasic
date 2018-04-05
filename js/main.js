@@ -8,7 +8,9 @@ miApp.controller ( 'div2C' , function ($scope){
     };
 });
 
-
+function pepe() {
+    
+}
 
 
 
