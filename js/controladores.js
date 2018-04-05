@@ -6,17 +6,17 @@ miApp.controller('bodyC',function($scope){
 
     $scope.papa = function(){
         alert("Ejecutaste PAPA!!");
-    }
+    };
 
-    $scope.name = "pepee control body"
+    $scope.name = "pepee control body";
 
-    $scope.tabla = ["bla 1","bla2","bla3"]
+    $scope.tabla = ["bla 1","bla2","bla3"];
 
     $scope.agregar = function(){
         //$scope.tabla.push("nuevo!!"+Math.random());
         rowData.push("make: 'Fiat', model: 'Palio', price: 60000");
 
-    }
+    };
 
     $scope.arriba = function () {
 
@@ -42,10 +42,10 @@ miApp.controller('bodyC',function($scope){
 
 
 
-    }
+    };
 
     $scope.abajo=function () {
-        $scope.mensaje="abajo"
+        $scope.mensaje="abajo";
         //var row_sel = function (g, xpos) {
           xpos=0;
             xpos=xpos+1;
@@ -55,15 +55,15 @@ miApp.controller('bodyC',function($scope){
                 }
             });
         //};
-    }
+    };
 
     $scope.izquierda=function () {
         $scope.mensaje="izq"
-    }
+    };
 
     $scope.derecha=function () {
         $scope.mensaje="der"
-    }
+    };
     function onRowSelected(event) {
         //window.alert("row " + event.node.rowIndex + " selected = " + event.node.selected);
         if (event.node.selected){seleccionFila=event.node.rowIndex}
@@ -132,7 +132,7 @@ miApp.controller('div2C',function($scope){
     $scope.f2 = function(){
         //alert("Ejecutaste f2!!");
         ngDialog . abierto ({
-            plantilla :  ' <p> Ejecutaste </ p> ' ,
+            plantilla :  ' <p> Ejecutaste </p> ' ,
             plain :  true
         });
     }
